@@ -77,4 +77,3 @@ OPENAI_API_KEY=your_openai_api_key
 - **GitHub**: [Rayyan9477](https://github.com/Rayyan9477)
 - **LinkedIn**: [Rayyan Ahmed](https://www.linkedin.com/in/rayyan-ahmed9477/)
 - **Email**: [rayyanahmed265@yahoo.com](mailto:rayyanahmed265@yahoo.com)
-```
