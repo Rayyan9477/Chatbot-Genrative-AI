@@ -7,7 +7,7 @@ import os
 load_dotenv()
 
 # Directly set the API key for testing purposes
-PINECONE_API_KEY = 'cead7852-aefc-4a54-94b5-45a1e7ca2fd3'
+PINECONE_API_KEY = 'API KEY'
 if PINECONE_API_KEY is None:
     raise ValueError("PINECONE_API_KEY environment variable is not set")
 

@@ -13,8 +13,9 @@ app = Flask(__name__)
 
 load_dotenv()
 
-PINECONE_API_KEY = 'cead7852-aefc-4a54-94b5-45a1e7ca2fd3'
-OPENAI_API_KEY = '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'
+PINECONE_API_KEY='your_pinecone_api_key'
+OPENAI_API_KEY='your_openai_api_key'
+
 
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY

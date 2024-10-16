@@ -1,132 +1,80 @@
-# End-to-end-Medical-Chatbot-Generative-AI
+# Medical Chatbot with Generative AI
 
 
-# How to run?
-### STEPS:
+## Project Description
 
-Clone the repository
+This project is an end-to-end medical chatbot powered by Generative AI. The chatbot is designed to assist users with medical-related queries by leveraging advanced natural language processing (NLP) techniques. It uses a combination of Pinecone for vector storage, OpenAI for language generation, and various other technologies to provide accurate and concise answers to user questions.
 
-```bash
-Project repo: https://github.com/
+### Technologies Used
+
+- **Python**: The core programming language used for development.
+- **Flask**: A lightweight WSGI web application framework for serving the chatbot.
+- **Pinecone**: A vector database for storing and querying embeddings.
+- **OpenAI**: For generating responses to user queries.
+- **LangChain**: For managing the interaction between the chatbot and the vector database.
+- **Hugging Face Transformers**: For embedding generation.
+- **Bootstrap**: For responsive and modern UI design.
+- **jQuery**: For handling AJAX requests and DOM manipulation.
+
+## Screenshot
+
+![Medical Chatbot Screenshot](static/Chatbot.png)
+
+## How to Run/Use This Project
+
+### Steps:
+
+1. **Clone the Repository**
+
+    ```bash
+    git clone https://github.com/Rayyan9477/End-to-End-Medical-Chatbot-Gen-AI.git
+    cd End-to-End-Medical-Chatbot-Gen-AI
+    ```
+
+2. **Create a Conda Environment**
+
+    ```bash
+    conda create -n medibot python=3.12 -y
+    conda activate medibot
+    ```
+
+3. **Install Dependencies**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Set Up Environment Variables**
+
+    Replace the placeholder API keys in the `app.py` and `store_index.py` files
+
+    ```
+    PINECONE_API_KEY=your_pinecone_api_key
+    OPENAI_API_KEY=your_openai_api_key
+    ```
+
+5. **Run the Application**
+
+    ```bash
+    python app.py
+    ```
+
+6. **Access the Chatbot**
+
+    Open your web browser and go to `http://localhost:8080` to start using the chatbot.
+
+## Replace API Keys
+
+Replace the placeholder API keys in the `app.py` file
+
 ```
-### STEP 01- Create a conda environment after opening the repository
-
-```bash
-conda create -n medibot python=3.10 -y
+PINECONE_API_KEY=your_pinecone_api_key
+OPENAI_API_KEY=your_openai_api_key
 ```
 
-```bash
-conda activate medibot
+## Contact Me
+
+- **GitHub**: [Rayyan9477](https://github.com/Rayyan9477)
+- **LinkedIn**: [Rayyan Ahmed](https://www.linkedin.com/in/rayyan-ahmed9477/)
+- **Email**: [rayyanahmed265@yahoo.com](mailto:rayyanahmed265@yahoo.com)
 ```
-
-
-### STEP 02- install the requirements
-```bash
-pip install -r requirements.txt
-```
-
-
-### Create a `.env` file in the root directory and add your Pinecone & openai credentials as follows:
-
-```ini
-PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
-
-
-```bash
-# run the following command to store embeddings to pinecone
-python store_index.py
-```
-
-```bash
-# Finally run the following command
-python app.py
-```
-
-Now,
-```bash
-open up localhost:
-```
-
-
-### Techstack Used:
-
-- Python
-- LangChain
-- Flask
-- GPT
-- Pinecone
-
-
-# AWS-CICD-Deployment-with-Github-Actions
-
-## 1. Login to AWS console.
-
-## 2. Create IAM user for deployment
-
-	#with specific access
-
-	1. EC2 access : It is virtual machine
-
-	2. ECR: Elastic Container registry to save your docker image in aws
-
-
-	#Description: About the deployment
-
-	1. Build docker image of the source code
-
-	2. Push your docker image to ECR
-
-	3. Launch Your EC2 
-
-	4. Pull Your image from ECR in EC2
-
-	5. Lauch your docker image in EC2
-
-	#Policy:
-
-	1. AmazonEC2ContainerRegistryFullAccess
-
-	2. AmazonEC2FullAccess
-
-	
-## 3. Create ECR repo to store/save docker image
-    - Save the URI: 970547337635.dkr.ecr.ap-south-1.amazonaws.com/medicalchatbot
-
-	
-## 4. Create EC2 machine (Ubuntu) 
-
-## 5. Open EC2 and Install docker in EC2 Machine:
-	
-	
-	#optinal
-
-	sudo apt-get update -y
-
-	sudo apt-get upgrade
-	
-	#required
-
-	curl -fsSL https://get.docker.com -o get-docker.sh
-
-	sudo sh get-docker.sh
-
-	sudo usermod -aG docker ubuntu
-
-	newgrp docker
-	
-# 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
-
-
-# 7. Setup github secrets:
-
-   - AWS_ACCESS_KEY_ID
-   - AWS_SECRET_ACCESS_KEY
-   - AWS_DEFAULT_REGION
-   - ECR_REPO
-   - PINECONE_API_KEY
-   - OPENAI_API_KEY
-
-    

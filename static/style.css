@@ -1,7 +1,7 @@
 body,html{
 	height: 100%;
 	margin: 0;
-	background: rgb(44, 47, 59);
+	background: rgb(173, 184, 222);
    background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
 	background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
 }
@@ -13,7 +13,7 @@ body,html{
 .card{
 	height: 500px;
 	border-radius: 15px !important;
-	background-color: rgba(0,0,0,0.4) !important;
+	background-color: rgba(179, 205, 11, 0.4) !important;
 }
 .contacts_body{
 	padding:  0.75rem 0 !important;
@@ -36,7 +36,7 @@ border-radius: 0 0 15px 15px !important;
 }
 .search{
 	border-radius: 15px 0 0 15px !important;
-	background-color: rgba(0,0,0,0.3) !important;
+	background-color: rgba(146, 33, 33, 0.3) !important;
 	border:0 !important;
 	color:white !important;
 }
